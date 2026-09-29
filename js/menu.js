@@ -25,7 +25,7 @@ const MENU = [
         d: "The people who make VASCO's work happen.",
         m: "Meet the team",
         sub: [],
-                img: "imgs/nav/vasco.jpeg"
+                img: "imgs/nav/team.jpeg"
 
       },
     ],
