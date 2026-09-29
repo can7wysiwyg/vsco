@@ -16,7 +16,7 @@ const MENU = [
         d: "Community-centred and participatory: we work alongside communities rather than imposing external solutions.",
         m: "Our approach",
         sub: ["Participation|#approach", "Partnership|#approach"],
-                img: "imgs/nav/vasco.jpeg"
+                img: "imgs/nav/approach.jpeg"
 
       },
       {
@@ -39,7 +39,7 @@ const MENU = [
         d: "Integrated programming that strengthens livelihoods and inclusive socio-economic development.",
         m: "Our strategic goal",
         sub: [],
-                img: "imgs/nav/liveli.png"
+                img: "imgs/nav/liveli.jpeg"
 
       },
       {
@@ -48,7 +48,7 @@ const MENU = [
         d: "Environmental stewardship with communities for lasting benefits.",
         m: "Our strategic goal",
         sub: [],
-                img: "imgs/nav/envt.png"
+                img: "imgs/nav/envt.jpeg"
 
       },
       {

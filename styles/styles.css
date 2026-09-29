@@ -783,12 +783,12 @@ svg {
 }
 .gal figcaption{position:relative;padding:14px 16px;font-weight:500;font-size:15px;width:100%}
 
-.g-meeting{background-image:url('/imgs/nav/social.png')}
-.g-livelihoods{background-image:url('/imgs/nav/veggies.png')}
-.g-environment{background-image:url('/imgs/nav/envt.png')}
+.g-meeting{background-image:url('/imgs/work/social.jpeg')}
+.g-livelihoods{background-image:url('/imgs/work/susagri.jpeg')}
+.g-environment{background-image:url('/imgs/work/treenurs.jpeg')}
 .g-governance{background-image:url('/imgs/nav/govt.png')}
-.g-inclusion{background-image:url('/imgs/nav/involved.png')}
-.g-partnerships{background-image:url('/imgs/nav/vasco.jpeg')}
+.g-inclusion{background-image:url('/imgs/work/commu.png')}
+.g-youth{background-image:url('/imgs/work/youth.jpeg')}
 @media (max-width: 960px) {
   .blk {
     padding: 60px 24px;
