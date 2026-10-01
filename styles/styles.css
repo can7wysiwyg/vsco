@@ -1131,4 +1131,109 @@ main p {
   .idcols{grid-template-columns:1fr;gap:20px}
 }
 
+.ebook { background: #fff; text-align: center; }
+.ebook .sub { margin-left: auto; margin-right: auto; }
+
+.book {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  margin: 20px auto 0;
+  perspective: 1000px;
+  display: flex;
+  cursor: pointer;
+}
+.book__spine {
+  width: 18px;
+  height: 100%;
+  background: var(--grad);
+  filter: brightness(0.75);
+  border-radius: 4px 0 0 4px;
+  box-shadow: inset -4px 0 6px rgba(0,0,0,.35);
+}
+.book__cover {
+  flex: 1;
+  height: 100%;
+  background: var(--grad);
+  border-radius: 0 6px 6px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  box-shadow:
+    0 14px 30px rgba(4,40,70,.35),
+    inset 6px 0 14px rgba(255,255,255,.15),
+    inset -3px 0 8px rgba(0,0,0,.25);
+  /* fanned page edge on the right side */
+  background-image:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.5) 0 1px, transparent 1px 3px),
+    var(--grad);
+  background-position: right, 0 0;
+  background-size: 6px 100%, auto;
+  background-repeat: no-repeat, no-repeat;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.book__title {
+  font-family: "Unbounded", "Arial Black", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.book__tap {
+  font-size: 13px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  opacity: .85;
+}
+.book:hover .book__cover,
+.book:focus-visible .book__cover {
+  transform: rotateY(-8deg) translateY(-4px);
+  box-shadow:
+    10px 20px 34px rgba(4,40,70,.4),
+    inset 6px 0 14px rgba(255,255,255,.18),
+    inset -3px 0 8px rgba(0,0,0,.25);
+}
+
+/* full-screen reader */
+.reader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #0a2536;
+  display: flex;
+  flex-direction: column;
+}
+.reader[hidden] { display: none; }
+.reader__bar {
+  flex: 0 0 auto;
+  height: 56px;
+  padding: 0 16px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.reader__close {
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 50%;
+}
+.reader__close:hover { background: rgba(255,255,255,.15); }
+.reader__frame {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: #fff;
+}
 

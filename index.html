@@ -512,6 +512,30 @@
 </section>
 
 
+<section class="sec ebook" id="ebook">
+  <div class="blk">
+    <h2>Read our project book</h2>
+    <p class="sub">Tap the book to open our projects e-book.</p>
+
+    <button class="book" id="openBook" type="button" aria-haspopup="dialog">
+      <span class="book__spine"></span>
+      <span class="book__cover">
+        <span class="book__title">Our Projects</span>
+        <span class="book__tap">Tap to read</span>
+      </span>
+    </button>
+  </div>
+</section>
+
+<div class="reader" id="reader" role="dialog" aria-modal="true" aria-label="Our projects e-book" hidden>
+  <div class="reader__bar">
+    <span>Our Projects</span>
+    <button class="reader__close" id="closeReader" type="button" aria-label="Close reader">&times;</button>
+  </div>
+  <iframe id="readerFrame" class="reader__frame" title="Our projects e-book"></iframe>
+</div>
+
+
 
 
     <section class="sec goal" id="work">
@@ -614,5 +638,7 @@
       </div>
     </footer>
     <script src="/js/menu.js" defer></script>
+    <script src="/js/pdf.js" defer></script>
+
   </body>
 </html>
