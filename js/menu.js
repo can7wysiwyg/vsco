@@ -131,14 +131,14 @@ const items = [...document.querySelectorAll(".it")];
 function paint() {
   const s = MENU[cur].s[sec];
   mega.innerHTML = `<div class="mwrap"><ul class="side">${MENU[cur].s.map((x, k) => `<li><button role="tab" aria-selected="${k === sec}" data-k="${k}">${x.l}</button></li>`).join("")}</ul>
- <div class="mc"><h2>${s.l}</h2><p>${s.d}</p><a class="more" href="${s.h}">${s.m} ${cv}</a>
+ <div class="mc"><h2>${s.l}</h2> <p>${s.d}</p>  <a class="more" href="${s.h}">${s.m} ${cv}</a>
  <div class="subl">${s.sub
    .map((x) => {
      const [a, b] = x.split("|");
      return `<a href="${b}">${a}</a>`;
    })
    .join("")}</div></div>
- <div class="art" style="background-image:url('${s.img}')" aria-hidden="true"><span>${MENU[cur].t}: ${s.l}</span></div></div>`;
+ <div class="art" style="background-image:url('${s.img}')" aria-hidden="true">   </div></div>`;
   mega.querySelectorAll(".side button").forEach((b) => {
     const go = () => {
       sec = +b.dataset.k;
